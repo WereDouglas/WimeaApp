@@ -1,0 +1,278 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="5dp">
+        <Button
+            android:id="@+id/metars"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+
+            android:textSize="28dp"
+            android:textColor="#D85B5B"
+            android:textColorLink="#D85B5B"
+            android:background="@android:color/transparent"
+            android:text="View metars"
+            />
+        <TextView
+            android:id="@+id/info"
+            android:text="New metar"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left"
+            android:textSize="28dp"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/timezone"
+                android:hint="YYGGggz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+            <EditText
+                android:id="@+id/wind_direction"
+                android:hint="Dddd"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                >
+
+                <requestFocus />
+            </EditText>
+                <EditText
+                    android:id="@+id/wind_speed"
+                    android:hint="ff/fm/fm KT"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/height"
+                android:hint="WW or CAVOCK"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/cloud"
+                android:hint="N1CCh1h1NnCChhhNhCChhh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/air_temperature"
+                android:hint="Air temperature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/humidity"
+                android:hint="Relative humidity(%)"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/dew"
+                android:hint="Dew point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/wet"
+                android:hint="Wet bulb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/tt"
+                    android:hint="TT"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/td"
+                    android:hint="TdTd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/stationhpa"
+                    android:hint="QNH(hpa)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/stationhpain"
+                    android:hint="QNH(in)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+
+                    >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/seahpa"
+                    android:hint="QFE(hpa)"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/seahpain"
+                    android:hint="QFE(in)"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/re"
+                android:hint="RE W1W1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/button_main_gr_r"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

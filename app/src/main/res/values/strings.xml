@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wimea Application</string>
+    <string name="hello_world">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">Home</string>
+    <string name="title_activity_metar">Metar data</string>
+
+    <string-array name="type">
+        <item>META</item>
+        <item>SPECI</item>
+    </string-array>
+
+    <string name="title_activity_metars">Metars data</string>
+    <string name="title_activity_daily">Daily data</string>
+    <string name="title_activity_dailys">Daily data</string>
+
+</resources>

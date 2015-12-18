@@ -1,0 +1,318 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="5dp">
+        <Button
+            android:id="@+id/dailys"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+
+            android:textSize="28dp"
+            android:textColor="#D85B5B"
+            android:textColorLink="#D85B5B"
+            android:background="@android:color/transparent"
+            android:text="View metars"
+            />
+        <TextView
+            android:id="@+id/info"
+            android:text="Records"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left"
+            android:textSize="28dp"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Change Date" />
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:id="@+id/dateview"
+                android:hint="Current date "
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/max"
+                    android:inputType="numberDecimal"
+                    android:hint="max temp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/min"
+                    android:hint="min temp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/actual"
+                    android:hint="rainfall(mm)"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/duration"
+                    android:hint="duration"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/sunshine"
+                android:hint="Sunshine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+            <EditText
+                android:id="@+id/anemometer"
+                android:hint="Anemometer"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <requestFocus />
+            </EditText>
+                <EditText
+                    android:id="@+id/wind"
+                    android:hint="Wind"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+                </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/evaptype1"
+                    android:hint="Evap.type"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/evap1"
+                    android:hint="Evap"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/evaptype2"
+                    android:hint="Evap.type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/evap2"
+                    android:hint="Evap"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/gpm"
+                android:hint="GPM:"
+                android:inputType="number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corner"
+                >
+                <requestFocus />
+            </EditText>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+                <EditText
+                    android:id="@+id/radiationtype"
+                    android:hint="Radiation type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+                <EditText
+                    android:id="@+id/radiation"
+                    android:hint="Radiation"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thunderstorm"
+                android:id="@+id/ts" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rainfall"
+                android:id="@+id/rf" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hail storm"
+                android:id="@+id/hs" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Haze"
+                android:id="@+id/hz" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earth Quake"
+                android:id="@+id/eq" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fog"
+                android:id="@+id/fg" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/button_main_gr_r"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

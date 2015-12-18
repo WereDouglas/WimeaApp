@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+
+        android:src="@drawable/ic_launcher_"
+        android:id="@+id/imageView"
+       android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"/>
+    <TextView
+        android:text="Please login to continue"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_corner"
+        >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/password"
+        android:hint="password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        android:ellipsize="start"
+        android:background="@drawable/rounded_corner"
+        >
+
+        <requestFocus />
+    </EditText>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@drawable/button_main_gr_r"
+        android:layout_marginBottom="5dp" />
+
+
+
+
+</LinearLayout>
